@@ -49,9 +49,14 @@ public class SpawnPlacement : MonoBehaviour
                 rigidBody.angularVelocity = Vector3.zero;
             }
 
-            transform.localPosition = localRespawnPosition;
-            transform.localRotation = localRespawnRotation;
+            OriginalTransform();
         }
+    }
+
+    public void OriginalTransform()
+    {
+        transform.localPosition = localRespawnPosition;
+        transform.localRotation = localRespawnRotation;
     }
 
     /// <summary>

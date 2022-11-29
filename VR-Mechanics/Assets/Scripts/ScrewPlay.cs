@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScrewPlay : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class ScrewPlay : MonoBehaviour
 
     [SerializeField] private Animator ScrewObjects;
     private bool isCollided = false;
+
+    public GameObject replayButton;
 
     public AudioSource _audioSource;
     public AudioClip successAudio, pickupAudio;
@@ -56,6 +59,14 @@ public class ScrewPlay : MonoBehaviour
         Debug.Log("AudioPlaying");
         yield return new WaitForSeconds(3f);
         _audioSource.PlayOneShot(successAudio);
+        replayButton.SetActive(true);
+
+    }
+
+    public void ResetPlay()
+    {
+        SceneManager.LoadScene("VR_Sample");
+
     }
 
 
