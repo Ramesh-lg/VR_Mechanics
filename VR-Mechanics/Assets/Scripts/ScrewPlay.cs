@@ -6,8 +6,8 @@ public class ScrewPlay : MonoBehaviour
     [SerializeField] private GameObject screwDriver;
     [SerializeField] private GameObject screwDriverRotate;
 
-    [SerializeField] private Vector3 currentRotation;
-    public float speed = 2;
+   // [SerializeField] private Vector3 currentRotation;
+   // public float speed = 2;
 
     [SerializeField] private Animator ScrewObjects;
     private bool isCollided = false;
@@ -15,13 +15,9 @@ public class ScrewPlay : MonoBehaviour
     public AudioSource _audioSource;
     public AudioClip successAudio, pickupAudio;
 
-    float minRotation = -45;
-    float maxRotation = 45;
-
-
     private void Start()
     {
-         currentRotation = transform.localRotation.eulerAngles;
+        // currentRotation = transform.localRotation.eulerAngles;
 
         isCollided = false;
     }
@@ -61,4 +57,6 @@ public class ScrewPlay : MonoBehaviour
         yield return new WaitForSeconds(3f);
         _audioSource.PlayOneShot(successAudio);
     }
+
+
 }

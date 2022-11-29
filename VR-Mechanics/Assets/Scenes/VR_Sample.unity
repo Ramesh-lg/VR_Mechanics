@@ -1076,7 +1076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5773928c73e283348b1aecb0b82e9cc3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5773928c73e283348b1aecb0b82e9cc3, type: 3}
@@ -1363,8 +1363,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screwDriver: {fileID: 7178430344466152460}
   screwDriverRotate: {fileID: 8025275500069698854}
-  currentRotation: {x: 180, y: 0, z: 0}
-  speed: 2
   ScrewObjects: {fileID: 8025275501193969528}
   _audioSource: {fileID: 474357725}
   successAudio: {fileID: 8300000, guid: 03eabf7953de81146b7af181e7816d7f, type: 3}
